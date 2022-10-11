@@ -1,13 +1,21 @@
 import React from 'react';
-import lists from '../data'
+import { Container, Col, Row } from 'react-bootstrap';
+import data from '../data'
 import Food from './Food';
-const FoodHouse = () => {
+
+
+const FoodHouse = (props) => {
+ 
+  const elements = data.map((element) => {
+    return <Food title={element.title} price={element.price} image={element.image} xs="2" />
+  })
 
   return (
-    <section>
-      safafasf
-    
-    </section>
+  <Container> 
+
+ {elements}
+
+  </Container>
   )
 }
 

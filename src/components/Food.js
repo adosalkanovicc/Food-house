@@ -1,12 +1,20 @@
 import React from 'react'
-import lists from '../data'
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
-const Food = ({item}) => {
-    const {id, title, price, image} = item
+
+const Food = (props) => {
   return (
-    <div>
-        
-    </div>
+
+  <Container className='wrapper'>
+
+      <img src={props.image} className="image"/>
+      <h1> {props.title} </h1>
+      <p> {props.price}</p>
+      <Button variant="primary">Buy now</Button>
+      <hr />
+
+   
+  </Container>
     
   )
 }

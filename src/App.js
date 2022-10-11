@@ -7,6 +7,7 @@ import Favorites from './components/Favorites';
 import FoodHouse from './components/FoodHouse';
 
 const App = () => {
+
   return (
     <div>
        <Navbar bg="dark" variant="dark" expand="sm">
@@ -15,8 +16,8 @@ const App = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end">
         <Nav className="me-right">
-          <Nav.Link as = {Link} to = "/">Home</Nav.Link>
-          <Nav.Link as = {Link} to = "favorites">Favorite</Nav.Link>
+          <Nav.Link as = {Link} to = "/" className='broj'>Home</Nav.Link>
+          <Nav.Link as = {Link} to = "favorites" className='broj'>Favorite</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
