@@ -4,18 +4,26 @@ import data from '../data'
 import Food from './Food';
 
 
-const FoodHouse = (props) => {
+const FoodHouse = () => {
  
   const elements = data.map((element) => {
-    return <Food title={element.title} price={element.price} image={element.image} xs="2" />
+    return <Col key={element.id} xs={8} md={6} lg={4} xl={4}><Food title={element.title} price={element.price} image={element.image}  /> </Col> 
   })
 
   return (
-  <Container> 
 
- {elements}
+<div className='container'>
+<h2>Your Food. Now you can order.</h2>
+  <Row>
 
-  </Container>
+   {elements}
+
+   </Row>
+
+
+
+ </div>
+
   )
 }
 

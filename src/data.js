@@ -32,8 +32,9 @@ export default
         },
         {
             id: 6,
-            title: "Chicken Wings",
+            title: "Wings",
             price: "6$",
             image: "https://mccormick.widen.net/content/n0phdkxdlp/jpeg/Franks_RedHot_Buffalo_Chicken_Wings.jpg?crop=true&anchor=0,0&q=80&color=ffffffff&u=qtpeo3&w=800&h=800"
         },
+        
 ]

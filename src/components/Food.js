@@ -3,19 +3,25 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 
 
 const Food = (props) => {
+
+
   return (
 
-  <Container className='wrapper'>
-
+<div className='container'>
       <img src={props.image} className="image"/>
-      <h1> {props.title} </h1>
-      <p> {props.price}</p>
-      <Button variant="primary">Buy now</Button>
-      <hr />
-
-   
-  </Container>
+      
+      <div className='row'>
+      <h2> {props.title} </h2>
+      <span> {props.price}</span>
+      </div>
     
+      <Button variant="primary">Add to Favorites</Button>
+     <div>
+     
+     </div>
+      <hr />
+      </div>
+     
   )
 }
 
