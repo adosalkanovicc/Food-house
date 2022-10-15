@@ -17,7 +17,7 @@ const App = () => {
       <Navbar.Collapse className="justify-content-end">
         <Nav className="me-right">
           <Nav.Link as = {Link} to = "/" className='broj'>Home</Nav.Link>
-          <Nav.Link as = {Link} to = "favorites" className='broj'>Favorite</Nav.Link>
+          <Nav.Link as = {Link} to = "favorites" className='broj'>Cart</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

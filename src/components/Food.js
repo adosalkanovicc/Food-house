@@ -1,25 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
-
+import Favorites from './Favorites';
+import data from '../data';
 
 const Food = (props) => {
 
+  const {data} = props
+  const [favorites, setFavorites] = useState(0)
 
-  return (
+const onAdd = () => {
+  setFavorites(favorites+1)
+}
+
+const onRemove = () => {
+  setFavorites(favorites-1)
+  
+  if (favorites <= 0) {
+  setFavorites(0)  
+  alert("You can't go below 0")
+  }
+
+}
+
+const sum = favorites * props.price
+
+return (
 
 <div className='container'>
+  <div className='border'>
       <img src={props.image} className="image"/>
-      
       <div className='row'>
       <h2> {props.title} </h2>
-      <span> {props.price}</span>
+      <p>{props.description}</p>
       </div>
-    
-      <Button variant="primary">Add to Favorites</Button>
-     <div>
-     
-     </div>
-      <hr />
+      <div className='price'>
+      <span> {props.price.toFixed(2)}$</span>
+      </div>
+      <Button variant="success" className="button" onClick={onAdd}>+</Button>
+      <Button variant="danger" className="button" onClick={onRemove}>-</Button>
+      <p className='row'>Currently, you have ordered <strong>{favorites} portions of {props.title}</strong> and price will be <strong> {sum.toFixed(2)}$ </strong> </p>
+      </div>
       </div>
      
   )

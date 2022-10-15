@@ -1,29 +1,31 @@
-import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Col, Row, Button } from 'react-bootstrap';
 import data from '../data'
 import Food from './Food';
 
-
-const FoodHouse = () => {
- 
-  const elements = data.map((element) => {
-    return <Col key={element.id} xs={8} md={6} lg={4} xl={4}><Food title={element.title} price={element.price} image={element.image}  /> </Col> 
+const FoodHouse = (props) => {
+    const {onAdd} = props
+    const elements = data.map((element) => {
+    return  <Col key={element.id} xs={12} md={6} lg={4} xl={4}>
+      <Food 
+       title={element.title}
+       price={element.price} 
+       image={element.image} 
+       description={element.description}  
+       onAdd = {onAdd}
+       /> 
+     
+      </Col> 
   })
 
   return (
-
-<div className='container'>
-<h2>Your Food. Now you can order.</h2>
+  <div className='container'>
+  <h3>Your Food. Now you can order.</h3>
   <Row>
-
-   {elements}
-
-   </Row>
-
-
-
- </div>
-
+  {elements}
+  <Button variant="dark" className="btn">Order</Button>
+  </Row>
+  </div>
   )
 }
 
