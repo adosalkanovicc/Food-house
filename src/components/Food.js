@@ -38,7 +38,7 @@ return (
       </div>
       <Button variant="success" className="button" onClick={onAdd}>+</Button>
       <Button variant="danger" className="button" onClick={onRemove}>-</Button>
-      <p className='row'>Currently, you have ordered <strong>{favorites} portions of {props.title}</strong> and price will be <strong> {sum.toFixed(2)}$ </strong> </p>
+      <p className='row'>Currently, you have ordered <strong>{favorites} portions of {props.title}</strong>and price will be <strong> {sum.toFixed(2)}$ </strong> </p>
       </div>
       </div>
      

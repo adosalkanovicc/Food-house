@@ -21,7 +21,7 @@ min-height: 400px;
 }
 .image:hover
 {
-transform: scale(1.3);
+transform: scale(1.2);
 cursor:zoom-in;
 transition: .6s ease;
 }

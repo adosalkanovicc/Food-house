@@ -26,18 +26,21 @@ export default
             id: 4,
             title: "Cheezburger",
             price: 4.20,
+            description: "A cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is placed on top of the meat patty. The cheese is usually added to the cooking hamburger patty shortly before serving, which allows the cheese to melt. Cheeseburgers can include variations in structure.",
             image: "https://cdn.britannica.com/31/122031-050-F8FCA663/Hamburger-cheeseburger.jpg"
         },
         {
             id: 5,
             title: "Nuggets",
             price: 5.40,
+            description : "A chicken nugget is a food product consisting of a small piece of deboned chicken meat that is breaded or battered, then deep-fried or baked. Invented in the 1950s, chicken nuggets have become a very popular fast food restaurant item, as well as widely sold frozen for home use.",
             image: "https://bakeitwithlove.com/wp-content/uploads/2021/05/Air-Fryer-Chicken-Nuggets-sq.jpg"
         },
         {
             id: 6,
-            title: "Wings",
+            title: "Hot Wings",
             price: 5.55,
+            description: "Hot wings are pieces of chicken that are fried and cooked, then smothered in sauce. Hot wings can vary in how hot they are, from being mild to very spicy. They are sometimes called Buffalo Wings because they originated from Buffalo, New York.",
             image: "https://mccormick.widen.net/content/n0phdkxdlp/jpeg/Franks_RedHot_Buffalo_Chicken_Wings.jpg?crop=true&anchor=0,0&q=80&color=ffffffff&u=qtpeo3&w=800&h=800"
         },
         
