@@ -8,7 +8,7 @@ const Favorites = (props) => {
  
   return (
     <div className='container'>
-      adada
+      
     </div>
     
   )
