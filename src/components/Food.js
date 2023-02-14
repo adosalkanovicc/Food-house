@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import Favorites from './Favorites';
-import data from '../data';
+
 
 const Food = (props) => {
 
@@ -38,7 +37,7 @@ return (
       </div>
       <Button variant="success" className="button" onClick={onAdd}>+</Button>
       <Button variant="danger" className="button" onClick={onRemove}>-</Button>
-      <p className='row'>Currently, you have ordered <strong>{favorites} portions of {props.title}</strong>and price will be <strong> {sum.toFixed(2)}$ </strong> </p>
+      <p className='row'> <strong> {props.title} count: {favorites} </strong> <strong> {sum.toFixed(2)}$ </strong> </p>
       </div>
       </div>
      

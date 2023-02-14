@@ -1,67 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
-*
-{
+* {
     font-family: 'Open Sans';
 }
-#basic-navbar-nav
-{
+#basic-navbar-nav {
 margin-right: 10px;
 }
-.start 
-{
+.start {
 text-align: center;
 width: 99%;
 margin: 2em auto;
 }
-.image
-{
+.image {
 max-width: 100%;
 object-fit: cover;
 min-height: 400px;
 }
-.image:hover
-{
+.image:hover {
 transform: scale(1.2);
 cursor:zoom-in;
 transition: .6s ease;
 }
-p 
-{
+p {
 text-align: justify;
 }
-h3
-{
+h3 {
 margin: 1em;
 font-weight: bold;
 }
-span 
-{
+span {
 font-size: 2em;
 font-weight: bold;
 text-align: right;
 align-items: center;
 }
-.row
-{
+.row {
 text-align: left;
 }
-.price
-{
+.price {
 text-align: right;
 }
-.border
-{
+.border {
 border: 5px solid #000;
 border-radius: 30px;
 padding: 20px;
 margin-bottom: 2em;
 }
-.button
-{
+.button {
 float: right;
 margin: 0.5em;
 }
-.btn 
-{
+.btn {
 margin-bottom: 2em;
+}
+h2 {
+font-family: 'Roboto';
+text-align: center;
+margin-top: 2em;
+font-weight: bold;
 }

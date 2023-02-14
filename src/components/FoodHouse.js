@@ -4,8 +4,8 @@ import data from '../data'
 import Food from './Food';
 
 const FoodHouse = (props) => {
-    const {onAdd} = props
-    const elements = data.map((element) => {
+    const { onAdd } = props
+    const elements = data.map(element => {
     return  <Col key={element.id} xs={12} md={6} lg={4} xl={4}>
       <Food 
        title={element.title}
@@ -14,7 +14,6 @@ const FoodHouse = (props) => {
        description={element.description}  
        onAdd = {onAdd}
        /> 
-     
       </Col> 
   })
 
@@ -23,7 +22,6 @@ const FoodHouse = (props) => {
   <h3>Your Food. Now you can order.</h3>
   <Row>
   {elements}
-  <Button variant="dark" className="btn">Order</Button>
   </Row>
   </div>
   )
